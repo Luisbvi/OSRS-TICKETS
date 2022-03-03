@@ -1,13 +1,13 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require('mongoose')
 
 module.exports = model(
-    'Ticket',
-    new Schema({
+  'Ticket',
+  new Schema({
     GuildID: String,
     MemberID: String,
     TicketID: String,
     ChannelID: String,
     Closed: Boolean,
     Locked: Boolean,
-    Type: String,
-}));
+    Type: String
+  }))
